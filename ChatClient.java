@@ -16,8 +16,7 @@ public abstract class ChatClient {
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
             Scanner scanner = new Scanner(System.in);
             new Thread(new IncomingMessageHandler(in)).start();
-
-            console.log({asd;asmdaslkd})
+            
             while (true) {
                 String message = scanner.nextLine();
                 out.println(message);
